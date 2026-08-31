@@ -12,9 +12,9 @@ First try to run
 gcc main.c -lSDL3 -o hyprlandCloseMenu
 ```
 
-If it doesn't print anything then you succesfully compiled Hyprland Close Menu and you can move on to the setup section
+If it doesn't print anything then you succesfully compiled Hyprland Close Menu and you can move on to the setup section.  
 If it tells you that you don't have SDL3 then read the section about installing SDL3.  
-If it tells you that you don't have gcc just install it with your system's package manager such as `sudo pacman -S gcc` on Arch and try the command again.
+If it tells you that you don't have gcc just install it with your system's package manager like `sudo pacman -S gcc` on Arch and try the command again.
 
 ## SDL3 Installation
 
@@ -28,13 +28,16 @@ cd SDL
 cmake -B build # this makes a folder called build and makes it ready for the build
 cmake --build build # this actually builds it and puts it in the build folder
 sudo cmake --install build # this takes the build folder and installs it
-sudo ldconfig # this restarts all of your libraries to activate SDL
+sudo ldconfig # this restarts all of your libraries which activates SDL
 ```
+
+Okay now do the command again.  
+Once it works you can delete the SDL folder.
 
 ## Setup
 
-Copy the compiled binary to /usr/bin (you will need to sudo cp it)  
-Then open up ~/.config/hypr/hyprland.lua (this is on the new versions of Hyprland so if you don't have hyprland.lua then uhh idk)  
+Copy the compiled binary to /usr/bin (you will need to sudo cp it).  
+Then open up ~/.config/hypr/hyprland.lua (this is on the new versions of Hyprland so if you don't have hyprland.lua then uhh idk).  
 Go to the section that has a bunch of functions that set up your keybindings.
 
 Mine looks like
